@@ -1,3 +1,5 @@
+/* import cutive mono font */
+
 @import url(//db.onlinewebfonts.com/c/5041b07a6f5e183cf1efe0e4a64598da?family=Cutive+Mono);
 
 @font-face {
@@ -15,17 +17,7 @@
       format("svg");
 }
 
-@font-face {
-  font-family: "Whyte";
-  src: url("Whyte-Light.eot");
-  src: local("Whyte Light"), local("Whyte-Light"),
-    url("Whyte-Light.eot?#iefix") format("embedded-opentype"),
-    url("Whyte-Light.woff2") format("woff2"),
-    url("Whyte-Light.woff") format("woff"),
-    url("Whyte-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
+/* reset all css */
 
 * {
   margin: 0;
@@ -33,63 +25,115 @@
   padding: 0;
 }
 
+/* body content */
+
 body {
-  background-color: #15243a;
+  background-color: #001928;
   color: white;
-  font-family: "Whyte";
+  font-family: "Cutive Mono";
   letter-spacing: 0.1em;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
+  overflow: hidden;
 }
+
+/* h1 styling */
 
 h1 {
   line-height: 1.2em;
 }
 
-.grid {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  /* lines I added */
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(11, calc(100vh / 8));
+h3 {
+  font-size: 18px;
+  line-height: 1.3em;
 }
+
+h4 {
+  font-size: 16px;
+}
+
+/* main container  */
+
+.grid {
+  height: 90vh;
+  width: 95vw;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, calc(90vh / 8));
+  margin: 55px auto;
+}
+
+/* main container box outlines */
 
 .grid-view div {
   border: 1px solid white;
-  /* line I added */
   overflow: auto;
 }
 
-.top-nav {
-  grid-column: 1/12;
-  padding: 20px 20px 20px 40px;
+/* logo container  */
+
+.logo-container-container-1 {
+  grid-column: 1/3;
+  display: flex;
 }
 
-.top-nav img {
-  width: 275px;
+.logo-container {
+  border: none !important;
+  margin: auto;
 }
 
-.top-left-1 {
+.logo-container img {
+  width: 175px;
+}
+
+/* headline text container */
+
+.headline-text-container-2 {
   grid-column: 1/4;
   grid-row: 2/5;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
-.top-mid-left-1 {
+/* letter W postcode container */
+
+.w-container-4 {
   grid-column: 1;
   grid-row: 5;
+  display: flex;
 }
 
-.top-mid-left-2 {
+.w-container {
+  border: none !important;
+  margin: auto;
+}
+
+/* letter F postcode container */
+
+.f-container-5 {
   grid-column: 2;
   grid-row: 5;
+  display: flex;
 }
 
-.top-mid-left-3 {
+.f-container {
+  border: none !important;
+  margin: auto;
+}
+
+/* number 8 postcode container */
+
+.number-8-container-6 {
   grid-column: 3;
   grid-row: 5;
+  display: flex;
+}
+
+.number-8-container {
+  border: none !important;
+  margin: auto;
 }
 
 .mid-left-span {
@@ -101,32 +145,93 @@ h1 {
 }
 
 .text-holder {
+  margin: auto;
   border: none !important;
 }
 
-.bot-left-1 {
+.number-1-container-8 {
   grid-column: 1;
   grid-row: 7;
+  display: flex;
 }
 
-.bot-left-2 {
+.number-1-container {
+  border: none !important;
+  margin: auto;
+}
+
+.l-container-9 {
   grid-column: 2;
   grid-row: 7;
+  display: flex;
 }
 
-.bot-left-3 {
+.l-container {
+  border: none !important;
+  margin: auto;
+}
+
+.p-container-10 {
   grid-column: 3;
   grid-row: 7;
+  display: flex;
 }
 
-.mid-vertical-col {
+.p-container {
+  border: none !important;
+  margin: auto;
+}
+
+.middle-vertical-col {
   grid-column: 4/6;
-  grid-row: 2/8;
+  grid-row: 2/5;
+  display: flex;
+}
+
+.middle-verticle-image {
+  border: none !important;
+  margin-left: auto;
+}
+
+.middle-vertical-image {
+  width: 180px;
+  margin: auto;
+  border: none !important;
+}
+
+.middle-paragraph-container {
+  grid-column: 4/6;
+  grid-row: 5/8;
+  display: flex;
+}
+
+.middle-paragraph {
+  margin: auto;
+  border: none !important;
+  padding: 25px;
+}
+
+.bottle-holder {
+  grid-row: 3/5;
+  display: flex;
+}
+
+.beer-bottle-image {
+  margin: auto;
+  width: 40%;
+  border: none !important;
 }
 
 .top-ill-con {
   grid-column: 6/8;
   grid-row: 2/4;
+  display: flex;
+}
+
+.top-ill-con-image {
+  width: 40%;
+  border: none !important;
+  margin: auto;
 }
 
 .mid-top-sq-1 {
@@ -137,11 +242,15 @@ h1 {
 .mid-top-sq-2 {
   grid-column: 6;
   grid-row: 5;
+  display: flex;
 }
 
 .mid-top-sq-3 {
-  grid-column: 6;
+  grid-column: 6/8;
   grid-row: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mid-top-sq-4 {
@@ -149,21 +258,129 @@ h1 {
   grid-row: 7;
 }
 
-.top-right-box {
+.top-right-text-container {
   grid-column: 10 / 12;
   grid-row: 2/6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-right-paragraph {
+  border: none !important;
+  margin: auto;
+  padding: 25px;
+}
+
+.top-right-image {
+  width: auto;
+}
+
+.mid-empty-square {
+  grid-column: 8;
+  grid-row: 3;
 }
 
 .mid-mid {
   grid-column: 7/9;
   grid-row: 4/6;
+  display: flex;
+}
+
+.mid-mid-image {
+  width: 47%;
+  border: none !important;
+  margin: auto;
+  transform: rotate(12deg);
+}
+
+.coffee-icon-holder {
+  grid-column: 9;
+  grid-row: 6;
+  display: flex;
+}
+
+.coffee-icon {
+  width: 25%;
+  margin: auto;
+  border: none !important;
 }
 
 .bottom-span {
   grid-column: 8/10;
   grid-row: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bot-nav {
-  grid-column: 1/12;
+.bottom-square {
+  grid-column: 7/8;
+  grid-row: 7;
+}
+
+.breakfast-and-brunch-container {
+  grid-column: 10/12;
+  grid-row: 6;
+  display: flex;
+}
+
+.breakfast-and-brunch {
+  margin: auto;
+  border: none !important;
+}
+
+.bottom-right-empty {
+  grid-column: 10;
+  grid-row: 7;
+}
+
+.bot-right-character {
+  grid-column: 11;
+  grid-row: 7;
+  display: flex;
+}
+
+.character {
+  margin: auto;
+  border: none !important;
+}
+
+.character img {
+  width: 80px;
+}
+
+.good-vibes-only {
+  grid-column: 8/10;
+  grid-row: 2;
+  display: flex;
+}
+
+.good-vibes {
+  margin: auto;
+  border: none !important;
+}
+
+.flag-container {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+}
+
+.flag-logo {
+  margin: auto;
+  border: none !important;
+}
+
+.flag-logo img {
+  width: 80px;
+}
+
+.book-now {
+  grid-column: 10/12;
+  grid-row: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
 }

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "abc_whyte_unlicensed_trialBd";
+  src: url("./fonts/abcwhyte-bold-trial-webfont.woff2") format("woff2"),
+    url("./fonts/abcwhyte-bold-trial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abc_whyte_unlicensed_trialBd";
+  src: url("./fonts/abcwhyte-bold-trial-webfont.woff2") format("woff2"),
+    url("./fonts/abcwhyte-bold-trial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abc_whyte_unlicensed_trialBk";
+  src: url("./fonts/abcwhyte-book-trial-webfont.woff2") format("woff2"),
+    url("./fonts/abcwhyte-book-trial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abc_whyte_unlicensed_trialLt";
+  src: url("./fonts/abcwhyte-light-trial-webfont.woff2") format("woff2"),
+    url("./fonts/abcwhyte-light-trial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abc_whyte_unlicensed_trialRg";
+  src: url("./fonts/abcwhyte-regular-trial-webfont.woff2") format("woff2"),
+    url("./fonts/abcwhyte-regular-trial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
